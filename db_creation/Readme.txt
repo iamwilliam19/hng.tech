@@ -1,1 +1,0 @@
-Run the createdb script to create the data base
