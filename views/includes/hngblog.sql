@@ -46,6 +46,25 @@ INSERT INTO `blog_members` (`memberID`, `username`, `password`, `email`) VALUES
 
 -- --------------------------------------------------------
 
+--table for interns
+CREATE TABLE `interns`(
+    `id` int(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    `full_name` VARCHAR(30) NOT NULL,
+    `phone_number` VARCHAR(20) NULL,
+    `experience` LONGTEXT NULL,
+    `picture` VARCHAR(30) NULL,
+    `email` VARCHAR(100) NOT NULL,
+    `tech_interest` VARCHAR(30) NOT NULL,
+    `internship_reason` LONGTEXT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--table for products
+CREATE TABLE `products`(
+    `id` int(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    `product_name` VARCHAR(30) NOT NULL,
+    `intern` VARCHAR(30) NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Table structure for table `blog_posts`
 --
